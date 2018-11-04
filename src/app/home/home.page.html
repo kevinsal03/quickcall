@@ -4,14 +4,29 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-card>
-  <ion-card-header>
-    Your User ID:
-  </ion-card-header>
-  <ion-card-content>
-    {{ id }}
-  </ion-card-content>
-</ion-card>
+<ion-content padding>
+  <ion-card>
+    <!-- Display User their user id -->
+    <ion-card-header>
+      Your User ID:
+    </ion-card-header>
+    <ion-card-content>
+      {{ id }}
+    </ion-card-content>
+  </ion-card>
+
+<ion-list>
+  <ion-item>
+    <ion-label floating>User ID:</ion-label>
+    <ion-input type="text" placeholder="sdf"></ion-input>
+  </ion-item>
+</ion-list>
+
+<div padding>
+  <button ion-button block>Call</button>
+</div>
+
+</ion-content>
 
 <!--<ion-content padding>
   The world is your oyster.
